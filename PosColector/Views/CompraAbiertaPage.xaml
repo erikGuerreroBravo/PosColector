@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PosColector.Views.CompraAbiertaPage">
+    <ContentPage.Content>
+        <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" ColumnSpacing="1" RowSpacing="1" Padding="20,0,20,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+             </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="80"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="300"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="2" Text="Compra Abierta" Margin="0,20,0,0"  Grid.ColumnSpan="2"
+                   FontSize="13" FontAttributes="Bold" TextColor="#1C375C"
+                   HorizontalOptions="StartAndExpand"></Label>
+            <Entry Grid.Row="1" Grid.Column="0"  WidthRequest="220"  Grid.ColumnSpan="5"   Placeholder="Ingresa codigo de barras" ></Entry>
+            <Button Grid.Row="1" Grid.Column="5" Text="Buscar" BackgroundColor="#1C375C" CornerRadius="5" TextColor="White"></Button>
+            <Label Grid.Row="2" Grid.Column="0" Text="Producto:" FontSize="11"  Margin="0,20,0,0" TextColor="#1C375C" FontAttributes="Bold"></Label>
+            <Entry Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="3" Placeholder="Descripción"></Entry>
+            <Label Grid.Row="3" Grid.Column="0" Text="Cantidad:" FontSize="11" TextColor="#1C375C" FontAttributes="Bold"></Label>
+            <Entry Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" Placeholder="Cantidad"></Entry>
+            <Label Grid.Row="4" Grid.Column="0" Text="Cantidad:" FontSize="11" TextColor="#1C375C" FontAttributes="Bold"></Label>
+            <Entry Grid.Row="4" Grid.Column="2" Placeholder="Unidad Medida" WidthRequest="180"></Entry>
+            <Button Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="4" Text="Agregar" BackgroundColor="#1C375C" CornerRadius="5" TextColor="White"></Button>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
